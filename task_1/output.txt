@@ -1,0 +1,170 @@
+1. Отримуємо всі завдання для конкретного користувача:Empty DataFrame
+Columns: [Task ID, Title, Description, Status]
+Index: []
+
+
+2. Вибираємо всі завдання з конкретним статусом 'new':    Task ID                                              Title                                        Description Status
+0         3  Interview clearly carry up thought remember ma...  Security inside possible during mean stand poo...    new
+1         4                       Better seat clearly clearly.  Woman indicate since. Enter consider more forw...    new
+2         5            Unit mind identify something yet south.  Enough research four protect task. Because vot...    new
+3         8                 Successful land pick help explain.  Soldier their result two. She affect themselve...    new
+4        13                             Tonight stop born say.  Full cold particular particularly have. Local ...    new
+5        20                          Article maintain imagine.  Laugh society would east thus view see. Some s...    new
+6        24     Serious Congress account recognize door blood.  Cost Democrat everyone prove thought city rece...    new
+7        28     Left idea try discuss difficult add wish rule.  Seem industry guy. Good spring call help there...    new
+8        29                  Yet star raise society fact drop.  Serious age field evening. Here me old busines...    new
+9        31          Item west maybe American speech art kind.  Network interesting contain use somebody head ...    new
+10       35                             Last probably student.  The door operation. Send watch consider big ne...    new
+11       36   Particularly choice present hold gas that value.  True two professional not. Couple customer arm...    new
+12       45                   Religious way morning education.  What media case pass way. Several but discover...    new
+13       49          Style his peace himself rich style blood.  Level hard themselves reveal change. Discussio...    new
+14       50      Enough somebody teacher amount thank forward.  Collection five fear reveal deep simply. Milit...    new
+
+
+3. Оновлюємо статус конкретного завдання:
+Оновлюємо статус завдання із ID 3 в 'in progress'
+
+
+4. Вибираємо всіх користувачів, які не мають жодного завдання:   User ID        Fullname                        Email
+0        1  Antonio Jensen   ortegadanielle@example.org
+1       12  Brianna Thomas  calderonanthony@example.org
+2       20    Mary Navarro      coltonlloyd@example.com
+
+
+5. Додаємо нове завдання для користувача:
+Завдання користувача після додавання нового:   Task ID         Title Description       Status
+0       51  Another Task              in progress
+
+
+6. Вибираємо всі завдання, які ще не завершено:    Task ID                                              Title                                        Description       Status
+0         4                       Better seat clearly clearly.  Woman indicate since. Enter consider more forw...          new
+1         5            Unit mind identify something yet south.  Enough research four protect task. Because vot...          new
+2         6          Dark night any join around right clearly.  Police action play stay budget. Property fire ...  in progress
+3         7                         Always perform decade key.  Later environmental government whether accept ...  in progress
+4         8                 Successful land pick help explain.  Soldier their result two. She affect themselve...          new
+5         9                     Family you cause draw popular.  Operation hour public another. Democrat act la...  in progress
+6        10           Skin style type mean idea develop force.  Election he your debate different. Song oil cu...  in progress
+7        11  Attack factor accept important save rest threa...  Strategy them mean Mrs while. Save clear outsi...  in progress
+8        13                             Tonight stop born say.  Full cold particular particularly have. Local ...          new
+9        14                      Tv cultural four sense voice.  We left form source nothing price administrati...  in progress
+10       19     Hundred when process month determine Congress.  Yourself position fine threat audience. Chair ...  in progress
+11       20                          Article maintain imagine.  Laugh society would east thus view see. Some s...          new
+12       21                  Reveal everybody per our article.  Land onto clear nor sing already maybe.\nNor f...  in progress
+13       24     Serious Congress account recognize door blood.  Cost Democrat everyone prove thought city rece...          new
+14       28     Left idea try discuss difficult add wish rule.  Seem industry guy. Good spring call help there...          new
+15       29                  Yet star raise society fact drop.  Serious age field evening. Here me old busines...          new
+16       30              Success morning trial newspaper nice.  Increase rate want mind respond. Become wait a...  in progress
+17       31          Item west maybe American speech art kind.  Network interesting contain use somebody head ...          new
+18       32                          Simply later doctor your.  Board similar news add. Challenge policy inter...  in progress
+19       34         Role oil long suggest name century around.  Price else interesting figure career. Blood be...  in progress
+20       35                             Last probably student.  The door operation. Send watch consider big ne...          new
+21       36   Particularly choice present hold gas that value.  True two professional not. Couple customer arm...          new
+22       37                   Hope better east style standard.  Grow cost to professor upon find box. Hot film...  in progress
+23       38                           Level late chance issue.  Wonder serve old anything leader give. Respons...  in progress
+24       41  Soon argue determine defense friend economic g...  Despite analysis most gas go. Want shake kid a...  in progress
+25       42      Determine ago last year meet week bank other.  Its head major sign such piece her. Around edu...  in progress
+26       43                 Movie officer charge same already.  Consumer least community language age. Economy...  in progress
+27       45                   Religious way morning education.  What media case pass way. Several but discover...          new
+28       46                    Course mind court between size.  Support law town glass machine. Option law rig...  in progress
+29       48                               Strong on song hear.  Common million or task body.\nBag board yourse...  in progress
+30       49          Style his peace himself rich style blood.  Level hard themselves reveal change. Discussio...          new
+31       50      Enough somebody teacher amount thank forward.  Collection five fear reveal deep simply. Milit...          new
+32        3  Interview clearly carry up thought remember ma...  Security inside possible during mean stand poo...  in progress
+33       51                                       Another Task                                                     in progress
+
+
+7. Видаляємо конкретне завдання за його id:
+Видалення завдання із ID 4
+Завдання користувача після видалення:   Task ID                                             Title                                        Description Status
+0       13                            Tonight stop born say.  Full cold particular particularly have. Local ...    new
+1       31         Item west maybe American speech art kind.  Network interesting contain use somebody head ...    new
+2       36  Particularly choice present hold gas that value.  True two professional not. Couple customer arm...    new
+
+
+8. Знаходимо користувачів за електронною поштою з умовою LIKE:   User ID           Fullname                         Email
+0        3  Christopher Wolfe       johnharrell@example.com
+1        7    Isaiah Gonzalez      leonardsmith@example.com
+2        9     Jennifer Reyes           eharris@example.com
+3       13     Rhonda Bradley             lhaas@example.com
+4       15       Samuel Brown  feliciarodriguez@example.com
+5       18          Erik Bell   mitchellloretta@example.com
+6       20       Mary Navarro       coltonlloyd@example.com
+
+
+9. Оновлюємо ім'я користувача:
+User 1's name updated to 'John Doe'.
+10. Отримуємо кількість завдань для кожного статусу:        Status  Task Count
+0    completed          17
+1  in progress          20
+2          new          13
+
+
+11. Вибираємо завдання, призначені користувачам, чия електронна пошта містить '@example.com':    Task ID                                              Title  ...                         Email       Status
+0         1             Interesting seek system anything main.  ...  feliciarodriguez@example.com    completed
+1         6          Dark night any join around right clearly.  ...      leonardsmith@example.com  in progress
+2         9                     Family you cause draw popular.  ...  feliciarodriguez@example.com  in progress
+3        11  Attack factor accept important save rest threa...  ...  feliciarodriguez@example.com  in progress
+4        14                      Tv cultural four sense voice.  ...      leonardsmith@example.com  in progress
+5        15                          Piece course develop far.  ...           eharris@example.com    completed
+6        17        That memory back since miss left out place.  ...  feliciarodriguez@example.com    completed
+7        20                          Article maintain imagine.  ...      leonardsmith@example.com          new
+8        24     Serious Congress account recognize door blood.  ...             lhaas@example.com          new
+9        25  Discover together because region public once w...  ...           eharris@example.com    completed
+10       28     Left idea try discuss difficult add wish rule.  ...       johnharrell@example.com          new
+11       29                  Yet star raise society fact drop.  ...           eharris@example.com          new
+12       45                   Religious way morning education.  ...             lhaas@example.com          new
+13       48                               Strong on song hear.  ...             lhaas@example.com  in progress
+14       49          Style his peace himself rich style blood.  ...   mitchellloretta@example.com          new
+15       50      Enough somebody teacher amount thank forward.  ...   mitchellloretta@example.com          new
+
+[16 rows x 6 columns]
+
+
+12. Вибираємо завдання, у яких відсутній опис:   Task ID         Title  User ID  Status ID
+0       51  Another Task        1          2
+
+
+13. Вибираємо користувачів та їхні завдання, які знаходяться у статусі 'in progress':    User ID          Fullname  Task ID                                              Title                                        Description       Status
+0         7   Isaiah Gonzalez        6          Dark night any join around right clearly.  Police action play stay budget. Property fire ...  in progress
+1         2       John Taylor        7                         Always perform decade key.  Later environmental government whether accept ...  in progress
+2        15      Samuel Brown        9                     Family you cause draw popular.  Operation hour public another. Democrat act la...  in progress
+3        14   Anthony Johnson       10           Skin style type mean idea develop force.  Election he your debate different. Song oil cu...  in progress
+4        15      Samuel Brown       11  Attack factor accept important save rest threa...  Strategy them mean Mrs while. Save clear outsi...  in progress
+5         7   Isaiah Gonzalez       14                      Tv cultural four sense voice.  We left form source nothing price administrati...  in progress
+6        19      Allison King       19     Hundred when process month determine Congress.  Yourself position fine threat audience. Chair ...  in progress
+7        17    Daniel Shelton       21                  Reveal everybody per our article.  Land onto clear nor sing already maybe.\nNor f...  in progress
+8         4        Mary White       30              Success morning trial newspaper nice.  Increase rate want mind respond. Become wait a...  in progress
+9        11        Diana Rose       32                          Simply later doctor your.  Board similar news add. Challenge policy inter...  in progress
+10       11        Diana Rose       34         Role oil long suggest name century around.  Price else interesting figure career. Blood be...  in progress
+11       10     Angela Conner       37                   Hope better east style standard.  Grow cost to professor upon find box. Hot film...  in progress
+12        8      Kevin Ortega       38                           Level late chance issue.  Wonder serve old anything leader give. Respons...  in progress
+13        5  Clifford Andrade       41  Soon argue determine defense friend economic g...  Despite analysis most gas go. Want shake kid a...  in progress
+14        8      Kevin Ortega       42      Determine ago last year meet week bank other.  Its head major sign such piece her. Around edu...  in progress
+15       17    Daniel Shelton       43                 Movie officer charge same already.  Consumer least community language age. Economy...  in progress
+16       17    Daniel Shelton       46                    Course mind court between size.  Support law town glass machine. Option law rig...  in progress
+17       13    Rhonda Bradley       48                               Strong on song hear.  Common million or task body.\nBag board yourse...  in progress
+18        6    Michael Cortez        3  Interview clearly carry up thought remember ma...  Security inside possible during mean stand poo...  in progress
+19        1          John Doe       51                                       Another Task                                                     in progress
+
+
+14. Отримуємо користувачів та кількість їхніх завдань:    User ID           Fullname                          Email  Task Count
+0        11         Diana Rose      moniquesexton@example.org           3
+1         9     Jennifer Reyes            eharris@example.com           3
+2        15       Samuel Brown   feliciarodriguez@example.com           4
+3        19       Allison King        jeffreywong@example.org           1
+4         3  Christopher Wolfe        johnharrell@example.com           1
+5        17     Daniel Shelton            qpeters@example.org           4
+6         5   Clifford Andrade          darlene33@example.org           3
+7         4         Mary White      jasminearnold@example.org           4
+8        10      Angela Conner  jenniferwilkerson@example.net           2
+9         6     Michael Cortez           gfreeman@example.org           4
+10       14    Anthony Johnson             todd49@example.net           1
+11       13     Rhonda Bradley              lhaas@example.com           3
+12        2        John Taylor        thomasellis@example.net           3
+13       16      Denise Wilson             tony48@example.org           3
+14        7    Isaiah Gonzalez       leonardsmith@example.com           3
+15       12     Brianna Thomas    calderonanthony@example.org           0
+16       20       Mary Navarro        coltonlloyd@example.com           0
+17        1           John Doe     ortegadanielle@example.org           1
+18       18          Erik Bell    mitchellloretta@example.com           2
+19        8       Kevin Ortega       murphyolivia@example.org           5
